@@ -45,7 +45,6 @@ namespace CompaniesAndEmployers_Console.Value
         {
             return $"Name: {Name}\t Category: {Category}\t Nationality: {Nationality}\nId: {Id}\tDate of creation: {CreationDate}";
         }
-
         public void AddEmployer(Employer employer)
         {
             Employer E = employer;

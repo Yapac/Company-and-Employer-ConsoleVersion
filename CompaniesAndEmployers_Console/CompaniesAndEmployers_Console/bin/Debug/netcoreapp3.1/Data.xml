@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CompanyData>
+    <CompaniesManagement>
+      <Company>
+        <Name>Samsung</Name>
+        <Category>Electronic fabrication</Category>
+        <Nationality>korea</Nationality>
+        <Id>Company - 1</Id>
+        <CreationDate>1938-03-01T00:00:00</CreationDate>
+        <NumberOfEmployers>1</NumberOfEmployers>
+        <Posts>
+          <string>Director</string>
+          <string>Employer</string>
+          <string>Director</string>
+          <string>Employer</string>
+          <string>Director</string>
+          <string>Employer</string>
+          <string>Director</string>
+          <string>Employer</string>
+        </Posts>
+        <Employers>
+          <Employer>
+            <FullName>Daniel kochima</FullName>
+            <Age>45</Age>
+            <Id>Employer - 1</Id>
+            <PlaceOfWork>Samsung</PlaceOfWork>
+            <Salary>0</Salary>
+          </Employer>
+        </Employers>
+      </Company>
+    </CompaniesManagement>
+  </CompanyData>
+  <EmployerData>
+    <EmployersManagment>
+      <Employer>
+        <FullName>Daniel kochima</FullName>
+        <Age>45</Age>
+        <Id>Employer - 1</Id>
+        <PlaceOfWork>Samsung</PlaceOfWork>
+        <Salary>0</Salary>
+      </Employer>
+      <Employer>
+        <FullName>Park jie hum</FullName>
+        <Age>32</Age>
+        <Id>Employer - 2</Id>
+        <PlaceOfWork>none</PlaceOfWork>
+        <Salary>0</Salary>
+      </Employer>
+      <Employer>
+        <FullName>Jamal idrissi</FullName>
+        <Age>19</Age>
+        <Id>Employer - 3</Id>
+        <PlaceOfWork>none</PlaceOfWork>
+        <Salary>0</Salary>
+      </Employer>
+    </EmployersManagment>
+  </EmployerData>
+</DataXml>

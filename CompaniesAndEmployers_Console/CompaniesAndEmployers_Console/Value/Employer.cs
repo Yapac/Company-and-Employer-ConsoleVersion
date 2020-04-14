@@ -7,30 +7,17 @@ namespace CompaniesAndEmployers_Console.Value
     public class Employer : Person
     {
         private static int CounterOfId = 1;
+        public string PlaceOfWork;
 
-        private Company myVar;
-        public Company PlaceOfWork
-        {
-            get { return myVar; }
-            set
-            {
-                Company entreprise = new Company("", "", "", DateTime.Now);
-                if (value == null)
-                {
-                    value = entreprise;
-                }
-                myVar = value;
-            }
-        }
         public int Salary { get; set; }
         public string Post { get; set; }
         #region Constructeur
-        public Employer(string FullName, int Age, Company PlaceOfWork) : base(FullName, Age)
+        public Employer(string FullName, int Age, string PlaceOfWork) : base(FullName, Age)
         {
             this.PlaceOfWork = PlaceOfWork;
             if (PlaceOfWork == null)
             {
-                this.PlaceOfWork = new Company();
+                this.PlaceOfWork = "none";
             }
             Id = "Employer - " + CounterOfId;
             Salary = 0;
@@ -47,7 +34,7 @@ namespace CompaniesAndEmployers_Console.Value
         #region Overriding
         public override string ToString()
         {
-            return base.ToString() + $"\t Post : {Post}\t Salary:{Salary}DH \tPlace of work: {PlaceOfWork.Name}";
+            return base.ToString() + $"\t Post : {Post}\t Salary:{Salary}DH \tPlace of work: {PlaceOfWork}";
         }
         public override bool Equals(object obj)
         {

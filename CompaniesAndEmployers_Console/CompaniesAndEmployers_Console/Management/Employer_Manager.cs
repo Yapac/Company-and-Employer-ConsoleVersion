@@ -1,7 +1,9 @@
 ﻿using CompaniesAndEmployers_Console.Value;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace CompaniesAndEmployers_Console.Management
 {
@@ -9,9 +11,8 @@ namespace CompaniesAndEmployers_Console.Management
     {
         public List<Employer> EmployersManagment = new List<Employer>();
 
+
         #region Methodes
-
-
         public void Add(Employer employeur)
         {
             EmployersManagment.Add(employeur);

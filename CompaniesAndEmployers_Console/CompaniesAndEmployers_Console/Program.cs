@@ -3,6 +3,8 @@ using CompaniesAndEmployers_Console.Management;
 using System.Xml.Serialization;
 using System.Collections.Generic;
 using CompaniesAndEmployers_Console.Value;
+using CompaniesAndEmployers_Console.Data;
+using System.IO;
 
 namespace CompaniesAndEmployers_Console
 {
@@ -10,22 +12,30 @@ namespace CompaniesAndEmployers_Console
     {
         static void Main(string[] args)
         {
+            //Xml Declaration
+            DataXml dataXml = new DataXml();
+            XmlSerializer DataSerializer = new XmlSerializer(typeof(DataXml));
 
             //Management Class declaration
             Employer_Manager _Employer = new Employer_Manager();
             Company_Manager _Company = new Company_Manager();
 
-            Company samsung = new Company("Samsung", "Electronic fabrication", "korea", new DateTime(1938, 3, 1));
-            Employer employer1 = new Employer("Daniel kochima", 45, samsung);
-            Employer employer2 = new Employer("Park jie hum", 32, samsung);
-            Employer employer3 = new Employer("Jamal idrissi", 19, null);
-            samsung.AddEmployer(employer1);
-            _Employer.Add(employer1);
-            _Employer.Add(employer2);
-            _Employer.Add(employer3);
-            _Company.AddCompany(samsung);
+            //Creating data
+            //Company samsung = new Company("Samsung", "Electronic fabrication", "korea", new DateTime(1938, 3, 1));
+            //Employer employer1 = new Employer("Daniel kochima", 45, samsung.Name);
+            //Employer employer2 = new Employer("Park jie hum", 32, null);
+            //Employer employer3 = new Employer("Jamal idrissi", 19, null);
+            //samsung.AddEmployer(employer1);
+            //_Employer.Add(employer1);
+            //_Employer.Add(employer2);
+            //_Employer.Add(employer3);
+            //_Company.AddCompany(samsung);
 
+            //save
+            //dataXml.Save(DataSerializer, new StreamWriter("Data.xml"), _Company, _Employer);
 
+            //load
+            dataXml.Load(DataSerializer, new StreamReader("Data.xml"), ref _Company, ref _Employer);
 
             bool Program = true;
             string Input = "";
@@ -45,6 +55,7 @@ namespace CompaniesAndEmployers_Console
                 Console.WriteLine("________COMPANIES AND EMPLOYERS________");
                 Program = Leave();
             }
+                        dataXml.Save(DataSerializer, new StreamWriter("Data.xml"), _Company, _Employer);
         } //done
         static void EmployerErea(Employer_Manager _Employer)
         {
@@ -74,7 +85,7 @@ namespace CompaniesAndEmployers_Console
                         try
                         {
                             Age = int.Parse(Console.ReadLine());
-                            Employer E = new Employer(FullName, Age, null);
+                            Employer E = new Employer(FullName, Age,null);
                             _Employer.Add(E);
                         }
                         catch (Exception)
@@ -104,6 +115,7 @@ namespace CompaniesAndEmployers_Console
                 Console.WriteLine("________WELCOME TO THE EMPLOYER AREA________");
                 Program = Leave();
             }
+
         } //done
         static void EspaceEntreprise(Company_Manager _Company, Employer_Manager _Employer)
         {
@@ -230,7 +242,7 @@ namespace CompaniesAndEmployers_Console
                         else
                         {
                             _Company.RemoveEmployer(Company, a);
-                            a.PlaceOfWork = null;
+                            
                             Console.WriteLine($"->{a.FullName} are deleted from {Company.Name}");
                         }
                         Console.WriteLine();

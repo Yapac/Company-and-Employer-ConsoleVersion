@@ -1,11 +1,11 @@
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\bin\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.exe
+C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.AssemblyInfo.cs
+C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.dll
+C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.pdb
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\bin\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.deps.json
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\bin\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.runtimeconfig.json
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\bin\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.runtimeconfig.dev.json
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\bin\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.dll
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\bin\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.pdb
 C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.csprojAssemblyReference.cache
-C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.AssemblyInfoInputs.cache
-C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.AssemblyInfo.cs
-C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.dll
-C:\Users\DELL\source\repos\CompaniesAndEmployers_Console\CompaniesAndEmployers_Console\obj\Debug\netcoreapp3.1\CompaniesAndEmployers_Console.pdb

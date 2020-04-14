@@ -1,14 +1,15 @@
 ﻿using CompaniesAndEmployers_Console.Value;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace CompaniesAndEmployers_Console.Management
 {
     public class Company_Manager
     {
         public List<Company> CompaniesManagement = new List<Company>();
-
 
         public void AddCompany(Company entreprise)
         {
@@ -25,7 +26,6 @@ namespace CompaniesAndEmployers_Console.Management
                 nb++;
             }
         }
-
         public void RemoveCompany(Company entreprise)
         {
             CompaniesManagement.Remove(entreprise);
@@ -40,7 +40,7 @@ namespace CompaniesAndEmployers_Console.Management
         }
         public void AddEmployer(Company Company, Employer employer)
         {
-            employer.PlaceOfWork = Company;
+            employer.PlaceOfWork = Company.Name;
             Company.AddEmployer(employer);
         }
         public void RemoveEmployer(Company company, Employer employer)
@@ -120,7 +120,5 @@ namespace CompaniesAndEmployers_Console.Management
             }
             return null;
         }
-
-
     }
 }
